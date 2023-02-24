@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 :root{
-    --main-color:#4388ff;
+    --main-color:#008a00;
 }
 html{
     scroll-behavior: smooth;
@@ -24,8 +24,11 @@ html{
 }
 
 body{
-    background: #d5ebff;
-    padding-left: 30rem;
+    color: white;
+    /* background: linear-gradient(90deg, #6e7d8b,#d5ebff); */
+    background: url(./../images/bg.jpg) no-repeat center center fixed;
+    /* backdrop-filter: blur(12px); */
+    padding-right: 30rem;
 }
 
 section{
@@ -36,7 +39,7 @@ section{
 .heading{
     font-size: 4rem;
     padding-bottom: 1rem;
-    color:#111;
+    color:#ffffff;
     text-transform: uppercase;
 }
 
@@ -62,8 +65,9 @@ section{
 
 header{
     position: fixed;
-    top:0; left:0; bottom:0;
-    background:rgba(34, 34, 34, 0.909);
+    top:0; right:0; bottom:0;
+    background:rgba(0, 0, 0, 0.276);
+    backdrop-filter: blur(22px);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -72,6 +76,8 @@ header{
     padding:8rem 2rem;
     width:30rem;
     text-align: center;
+    border-left: 1px solid black;
+    box-shadow: 0 0 12px black;
 }
 
 header .logo{
@@ -277,7 +283,7 @@ header .follow a:hover{
 
 .about .row-2 .skills .progress .bar{
     width:100%;
-    background:#ccc;
+    background:#cccccc;
     overflow:hidden;
     height:1rem;
     border-radius: 50rem;
@@ -315,8 +321,9 @@ header .follow a:hover{
 
 .about .row-2 .box-container .box{
     flex:1 1 15rem;
-    background:#fff;
     padding:2rem;
+    background:linear-gradient(90deg, #addfb089, #3bdd9f5e);
+    backdrop-filter: blur(22px);
     border-radius: .5rem;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 }
@@ -327,7 +334,7 @@ header .follow a:hover{
 }
 
 .about .row-2 .box-container .box p{
-    color:#666;
+    color:#280033;
     font-size: 1.7rem;
     padding-top: .5rem;
 }
@@ -342,7 +349,8 @@ header .follow a:hover{
     flex:1 1 30rem;
     text-align: center;
     padding:2rem;
-    background:#fff;
+    background:linear-gradient(90deg, #addfb089, #3bdd9f5e);
+    backdrop-filter: blur(22px);
     border-radius: .5rem;
     box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
 }
@@ -358,13 +366,13 @@ header .follow a:hover{
 }
 
 .service .box-container .box h3{
-    color:#444;
+    color:#000000;
     font-size: 2.2rem;
     padding-top: 1rem;
 }
 
 .service .box-container .box p{
-    color:#666;
+    color:#1f003e;
     font-size: 1.7rem;
     padding-top: .5rem;
 }
@@ -394,7 +402,8 @@ header .follow a:hover{
 }
 
 .experience .box-container .box .content{
-    background:#fff;
+    background:linear-gradient(90deg, #addfb089, #3bdd9f5e);
+    backdrop-filter: blur(22px);
     padding:1.5rem;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     border-radius: .5rem;
@@ -415,8 +424,8 @@ header .follow a:hover{
 }
 
 .experience .box-container .box .content p{
-    font-size: 1.5rem;
-    color:#666;
+    font-size: 1.6rem;
+    color:#00062e;
 }
 
 .portfolio .box-container{
@@ -430,9 +439,10 @@ header .follow a:hover{
     height:25rem;
     position: relative;
     overflow:hidden;
-    border:1rem solid #fff;
+    border:1rem solid #dcffd2;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    background:#fff;
+    background:linear-gradient(90deg, #addfb089, #3bdd9f5e);
+    backdrop-filter: blur(22px);
     border-radius: .5rem;
 }
 
@@ -454,7 +464,7 @@ header .follow a:hover{
     position: absolute;
     bottom:.5rem; left:1rem;
     font-size: 2.5rem;
-    color:#333;
+    color:#000000;
     text-transform: uppercase;
 }
 
@@ -478,7 +488,7 @@ header .follow a:hover{
 
 .portfolio .box-container .box .icons a:hover{
     background:var(--main-color);
-    color:#fff;
+    color:#ffffff;
 }
 
 .contact .icons-container{
@@ -492,7 +502,8 @@ header .follow a:hover{
     flex:1 1 25rem;
     text-align: center;
     padding:2rem;
-    background:#fff;
+    background:linear-gradient(90deg, #addfb089, #3bdd9f5e);
+    backdrop-filter: blur(22px);
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     border-radius: .5rem;
 }
@@ -508,14 +519,14 @@ header .follow a:hover{
 }
 
 .contact .icons-container .icons h3{
-    color:#111;
-    font-size: 2rem;
+    color:#000000;
+    font-size: 2.3rem;
     padding:.5rem 0;
     padding-top: 1rem;
 }
 
 .contact .icons-container .icons p{
-    color:#666;
+    color:#000341;
     font-size: 1.7rem;
 }
 
@@ -527,7 +538,7 @@ header .follow a:hover{
 
 .contact .row form{
     flex:1 1 55rem;
-    background:#fff;
+    background:#ffffff;
     padding:0 2rem;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     border-radius: .5rem;
@@ -577,8 +588,9 @@ header .follow a:hover{
     font-size: 2rem;
     padding:2.5rem;
     text-align: center;
-    color:#666;
-    background: #fff;
+    color:#000758;
+    background:linear-gradient(90deg, #addfb089, #3bdd9f5e);
+    backdrop-filter: blur(22px);
 }
 
 .footer span{
@@ -647,3 +659,4 @@ header .follow a:hover{
     }
 
 }
+
